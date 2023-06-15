@@ -13,9 +13,18 @@ scrolling:
 
 font:
   normal:
-    family: fira code
+    family: firacode nerd font
     style:  Regular
-  size: 10
+  bold:
+    family: firacode nerd font
+    style: Bold
+  italic:
+    family: firacode nerd font
+    style: Italic
+  bold_italic:
+    family: firacode nerd font
+    style: Bold Italic
+  size: 9
 
 cursor:
   style: 
