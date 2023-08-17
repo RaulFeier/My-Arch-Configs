@@ -1,0 +1,15 @@
+AppIndicator and KStatusNotifierItem Support
+Aylur Widgets
+Blur my Shell
+Color App Menu Icon for GNOME 40+
+Compact Top Bar
+Compiz alike magic lamp effect
+Dash to Dock
+Frequency Boost Swich
+Impatience
+Mpris Label
+OpenWeather
+Rounded Corners
+Rounded Window Corners
+Transparent Top Bar
+User Themes
