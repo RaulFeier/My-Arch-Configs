@@ -1,0 +1,52 @@
+import = ["/home/misu/.config/alacritty/eep.toml"]
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[cursor.style]
+shape = "Underline"
+
+[font]
+size = 9
+
+[font.bold]
+family = "firacode nerd font"
+style = "Bold"
+
+[font.bold_italic]
+family = "firacode nerd font"
+style = "Bold Italic"
+
+[font.italic]
+family = "firacode nerd font"
+style = "Italic"
+
+[font.normal]
+family = "firacode nerd font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Super|Shift"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = false
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.9
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 7
+y = 7
