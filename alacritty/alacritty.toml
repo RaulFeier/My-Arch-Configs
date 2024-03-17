@@ -4,7 +4,7 @@ import = ["/home/misu/.config/alacritty/eep.toml"]
 draw_bold_text_with_bright_colors = true
 
 [cursor.style]
-shape = "Underline"
+shape = "underline"
 
 [font]
 size = 9
@@ -28,7 +28,7 @@ style = "Regular"
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
 key = "Return"
-mods = "Super|Shift"
+mods = "Super"
 
 [scrolling]
 history = 10000

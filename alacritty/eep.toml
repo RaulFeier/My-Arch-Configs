@@ -2,6 +2,9 @@
 # author = "Folke"
 # name = "TokyoNight Night"
 
+[colors.cursor]
+cursor = "0x3e4aab"
+
 [[colors.indexed_colors]]
 color = "0xff9e64"
 index = 16
