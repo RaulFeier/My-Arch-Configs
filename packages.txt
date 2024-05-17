@@ -1,0 +1,3 @@
+helix git neovim vim neofetch gopls clang python3 alacritty bash-language-server lua-language-server python-lsp-server rust-analyzer taplo
+npm bash-completion shellcheck rust-gdb rust-lldb python-mccabe python-pycodestyle python-pydocstyle python-pyflakes python-pylint python-rope autopep8 flake8
+python-pydantic python-tabulate gdb xclip cargo jdk-openjdk llvm
