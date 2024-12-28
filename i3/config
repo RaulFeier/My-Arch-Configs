@@ -1,6 +1,7 @@
 # Misu i3 config file
 set $mod Mod4
 
+# font firacode 9
 font pango:monospace 8
 
 exec --no-startup-id dex --autostart --environment i3
@@ -93,25 +94,62 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+
+# Define colors variables:
+set $darkbluetrans	#08052be6
+set $darkblue		#08052b
+set $lightblue		#5294e2
+set $urgentred		#e53935
+set $white		#ffffff
+set $black		#000000
+set $purple		#e345ff
+set $darkgrey		#383c4a
+set $grey		#b0b5bd
+set $mediumgrey		#8b8b8b
+set $yellowbrown	#e1b700
+
+#class		        	border		bground		text		indicator	child_border
+client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
+client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
+client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
+client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	status_command i3status
+        font pango: FiraCode Nerd Font Mono 8
+        status_command i3status
 	position top
-	# i3bar_command i3bar --transparency
+	i3bar_command i3bar --transparency
+
+	colors {
+		separator          $black
+		background         $black
+		statusline         $white
+#                          		border 		        bg		txt		indicator
+		focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
+		active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
+		inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
+		urgent_workspace	$urgentred	    	$urgentred	$white		$purple
+	}
 }
 
-exec --no-startup-id picom
+exec picom
 exec --no-startup-id fix-xcursor
+
+bindsym $mod+l exec "python3 ~/.config/lock-screen.py"
 
 default_border pixel 1
 default_floating_border normal
 hide_edge_borders none
 
-gaps inner 14
-gaps outer -2
+gaps inner 0
+gaps outer 0
 smart_gaps on
 smart_borders on
 
-exec_always feh --bg-fill My-Arch-Configs/wallpapers/fiji.jpg --bg-fill My-Arch-Configs/wallpapers/linux_rooom.png
+exec_always xset s off
+exec_always xset -dpms
 exec_always ./.screenlayout/main.sh
+exec_always feh --bg-fill My-Arch-Configs/wallpapers/adventuretime.jpg

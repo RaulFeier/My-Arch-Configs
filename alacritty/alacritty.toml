@@ -1,4 +1,4 @@
-import = ["/home/misu/.config/alacritty/eep.toml"]
+general.import = ["~/.config/alacritty/eep.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -10,19 +10,19 @@ shape = "underline"
 size = 9
 
 [font.bold]
-family = "firacode nerd font"
+family = "FiraCode Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "firacode nerd font"
+family = "Hack Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "firacode nerd font"
+family = "Hack Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "firacode nerd font"
+family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
 [[keyboard.bindings]]
@@ -35,10 +35,10 @@ history = 10000
 multiplier = 3
 
 [selection]
-save_to_clipboard = false
+save_to_clipboard = true
 
-[shell]
-program = "/usr/bin/zsh"
+[terminal.shell]
+program = "/usr/bin/bash"
 
 [window]
 opacity = 0.9
