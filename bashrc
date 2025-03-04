@@ -17,6 +17,7 @@ alias update='sudo pacman -Syu'
 alias install='sudo pacman -S'
 # alias neofetch='neofetch --ascii_distro blackarch'
 alias shut='shutdown now'
+alias hx='helix'
 
 # codeforces alias
 #alias submit='cf submit'

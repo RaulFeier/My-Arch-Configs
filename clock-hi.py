@@ -5,7 +5,6 @@ def main():
     
     hour = date.hour
     
-
     if hour >= 0 and hour <= 7:
         print("Work Hard ")
     elif hour >= 8 and hour <= 14:
