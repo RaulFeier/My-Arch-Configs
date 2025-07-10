@@ -1,4 +1,4 @@
-general.import = ["~/.config/alacritty/eep.toml"]
+general.import = ["~/.config/alacritty/onedark.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -7,7 +7,7 @@ draw_bold_text_with_bright_colors = true
 shape = "underline"
 
 [font]
-size = 9
+size = 11
 
 [font.bold]
 family = "FiraCode Nerd Font Mono"
@@ -41,7 +41,9 @@ save_to_clipboard = true
 program = "/usr/bin/bash"
 
 [window]
-opacity = 0.9
+opacity = 1.0
+dimensions.columns = 200
+dimensions.lines = 50
 
 [window.class]
 general = "Alacritty"

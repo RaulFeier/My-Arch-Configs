@@ -1,0 +1,81 @@
+theme = "kanagawa-dragon"
+
+[editor]
+# auto-save = true
+# auto-format = true
+# auto-completion = true
+# bufferline = "multiple"
+color-modes = true
+# completion-replace = true
+# cursorcolumn = false
+# cursorline = false
+# line-number = "relative"
+# mouse = false
+# #rulers = [79]
+true-color = true
+# end-of-line-diagnostics = "hint"
+
+# [editor.inline-diagnostics]
+# cursor-line = "error"
+# other-lines = "disable"
+
+# [editor.whitespace.render]
+# space = "none"
+# nbsp = "none"
+# tab = "none"
+# newline = "none"
+
+# [editor.whitespace.characters]
+# space = "·"
+# nbsp = "⍽"
+# tab = "→"
+# newline = "⏎"
+# tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+# [editor.file-picker]
+# hidden = false
+# git-ignore = false
+
+[editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "version-control",
+  "spacer",
+  "separator",
+  "file-name",
+  "file-modification-indicator"
+]
+right = [
+  "spinner",
+  "spacer",
+  "workspace-diagnostics",
+  "separator",
+  "spacer",
+  "diagnostics",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
+separator = "╎"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "╎"
+skip-levels = 0
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 10 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 40
