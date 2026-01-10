@@ -18,6 +18,7 @@ alias install='sudo pacman -S'
 # alias neofetch='neofetch --ascii_distro blackarch'
 alias shut='shutdown now'
 alias hx='helix'
+alias zed='zeditor'
 
 # codeforces alias
 #alias submit='cf submit'
@@ -38,3 +39,9 @@ fi
 
 export BROWSER='/usr/bin/firefox'
 export TERMINAL='/usr/bin/alacritty'
+
+gccx() {
+  src="$1"
+  out="${src%.*}"
+  g++ -Wall -Wextra -fsanitize=address,undefined "$src" -o "$out"
+}
